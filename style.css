@@ -11,6 +11,18 @@ body {
     background: darkgrey;
 }
 
+/* .main-img {
+    width: 768px;
+    height: 500px;
+}
+
+.main-img img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+} */
+
 img {
     width: 100%;
 }
@@ -22,6 +34,7 @@ img {
 }
 
 .images img {
+    /* width: 100%; */
     cursor: pointer;
 }
 
