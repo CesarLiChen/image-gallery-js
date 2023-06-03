@@ -1,0 +1,26 @@
+body {
+    margin: 1.5rem;
+    padding: 0;
+    background: rgb(78, 66, 66);
+}
+
+.container {
+    max-width: 768px;
+    margin: auto;
+    border: darkgrey solid 3px;
+    background: white;
+}
+
+img {
+    width: 100%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.2rem;
+}
+
+.images img {
+    cursor: pointer;
+}
