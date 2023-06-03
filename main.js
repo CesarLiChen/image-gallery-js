@@ -13,4 +13,10 @@ function imageClick(event) {
 
     // Changes main image to clicked image.
     current.src = event.target.src;
+
+    // Adds fade-in class
+    current.classList.add("fade-in");
+
+    // Removes fade-in after 500ms (0.5seconds)
+    setTimeout(() => current.classList.remove("fade-in"), 500);
 }
