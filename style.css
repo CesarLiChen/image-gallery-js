@@ -24,3 +24,15 @@ img {
 .images img {
     cursor: pointer;
 }
+
+/* Fade animation */
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade 0.5s ease-in 1 forwards;
+}
