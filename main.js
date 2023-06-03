@@ -11,6 +11,9 @@ images.addEventListener("click", imageClick);
 function imageClick(event) {
     console.log(event.target);
 
+    // Resets thumbnails' opacity
+    imgArray.forEach((img) => img.style.opacity = 1);
+
     // Changes main image to clicked image.
     current.src = event.target.src;
 
@@ -19,4 +22,7 @@ function imageClick(event) {
 
     // Removes fade-in after 500ms (0.5seconds)
     setTimeout(() => current.classList.remove("fade-in"), 500);
+
+    // Changes current thumbnail's opacity
+    event.target.style.opacity = opacity;
 }
